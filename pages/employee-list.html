@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee List</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body onload="checkAuth(); loadEmployees()">
+    <header>
+        <h1>Employee List</h1>
+        <button onclick="logout()">Logout</button>
+    </header>
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Department</th>
+                    <th>Job Title</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="employeeTableBody">
+                <!-- Employee rows will be populated here -->
+            </tbody>
+        </table>
+    </main>
+    <script src="../js/auth.js"></script>
+    <script src="../js/employee.js"></script>
+</body>
+</html> 
